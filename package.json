@@ -1,0 +1,23 @@
+{
+  "name": "banderole-server",
+  "version": "0.1.0",
+  "description": "Banderole server is a monorepository that contains banderole feature-flags servers",
+  "main": "src/index.js",
+  "repository": "git@github.com:lcallarec/banderole-server.git",
+  "author": "Laurent Callarec <l.callarec@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "banderole": "0.4.*",
+    "koa": "^2.5.0",
+    "koa-route": "^3.2.0"
+  },
+  "devDependencies": {
+    "jest": "^22.4.2",
+    "node-fetch": "^2.1.1",
+    "supertest": "^3.0.0"
+  },
+  "scripts": {
+    "jest": "node ./node_modules/jest-cli/bin/jest.js src/"
+  }
+}

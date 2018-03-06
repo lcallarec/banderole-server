@@ -1,0 +1,51 @@
+{
+    "features": {
+        "switchboard": true,
+        "clock": false,
+        "mailer": {
+            "enabled": true
+        },
+        "slack-integration": {
+            "enabled": false
+        },
+        "service-panel": {
+            "is-greater-than-10": [20]
+        },        
+        "red-fonts": {
+            "is-greater-than-10": [5]
+        },
+        "dark-theme": {
+            "between-hours": ["22", "06"]
+        }, 
+        "affirmative-strategy-with-one-enable-vote": {
+            "strategy:affirmative": {
+                "unauthorize": null,
+                "authorize": null,
+                "unauthorize": null
+            }
+        },
+        "affirmative-strategy-with-no-enable-vote": {
+            "strategy:affirmative": {
+                "unauthorize": null,
+                "unauthorize": null,
+                "unauthorize": null
+            }
+        },
+        "unanimous-strategy-with-all-enabled": {
+            "strategy:unanimous": {
+                "authorize": null,
+                "authorize": null
+            }
+        },
+        "unanimous-strategy-with-one-disabled": {
+            "strategy:unanimous": {
+                "authorize": null,
+                "unauthorize": null,
+                "authorize": null
+            }
+        },
+        "debug-logger": {
+            "runtime-env": ["DEV"]
+        }
+    }
+}
