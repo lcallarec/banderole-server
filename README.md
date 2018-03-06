@@ -1,4 +1,7 @@
 # banderole-server
+[![Build Status](https://travis-ci.org/lcallarec/banderole-server.svg?branch=master)](https://travis-ci.org/lcallarec/banderole-server)
+[![codecov](https://codecov.io/gh/lcallarec/banderole-server/branch/master/graph/badge.svg)](https://codecov.io/gh/lcallarec/banderole-server)
+
 Banderole server is a monorepository that contains banderole feature-flags servers
 
 ## Usage
