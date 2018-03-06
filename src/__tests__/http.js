@@ -23,7 +23,21 @@ describe('http server sanity check', () => {
         server.close();
 
         //Then
-        expect(response.text).toEqual("PONG");
+        expect(response.body).toEqual("PONG");
+    });
+
+    test('The server should always respond with a application/json content type', async () => {
+        //Given
+        const port = 3000;
+
+        //When
+        const server = banderoleServer.http(banderole, new Koa(), port);
+        const response = await request(server)
+            .get('/ping');
+        server.close();
+
+        //Then
+        expect(response.headers["content-type"]).toEqual("application/json");
     });
 });
 
@@ -39,7 +53,7 @@ describe('Return a feature-flag', () => {
         server.close();
 
         //Then
-        expect(response.text).toEqual("true");
+        expect(response.body).toBeTruthy();
     });
 
     test('The server should respond false if the feature-flag is explicitely set to false', async () => {

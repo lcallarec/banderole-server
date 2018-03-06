@@ -1,6 +1,6 @@
 {
   "name": "banderole-server",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Banderole server is a monorepository that contains banderole feature-flags servers",
   "main": "src/index.js",
   "repository": "git@github.com:lcallarec/banderole-server.git",
